@@ -1,0 +1,55 @@
+* {
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  box-sizing: border-box;
+}
+
+body, html {
+  --text-color: rgb(20, 11, 31);
+  margin: 0;
+  color: var(--text-color);
+  font-size: 18px;
+}
+
+.recipe-layout {
+  display: grid;
+  grid-template-columns: clamp(300px, 28vw, 600px) 1fr;
+  grid-template-rows: 60px 1fr;
+  height: 100vh;
+}
+.recipe-layout .header {
+  grid-column: 1/-1;
+  background-color: var(--text-color);
+  padding: 20px;
+}
+.recipe-layout .header * {
+  color: white;
+}
+.recipe-layout main {
+  display: grid;
+  padding: 1rem;
+}
+.recipe-layout .side-bar {
+  overflow: auto;
+}
+.recipe-layout .side-bar ol {
+  list-style: none;
+  padding: 0 10px;
+}
+.recipe-layout .side-bar ol li {
+  margin: 10px 0;
+  font-size: 120%;
+}
+.recipe-layout .side-bar ol li * {
+  font-size: inherit;
+}
+.recipe-layout .side-bar input {
+  margin: 10px;
+  width: calc(100% - 20px);
+}
+.recipe-layout .side-by-side {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+}
+
+/*# sourceMappingURL=global.css.map */
