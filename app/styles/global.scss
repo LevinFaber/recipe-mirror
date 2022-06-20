@@ -28,6 +28,7 @@ body, html {
   main {
     display: grid;
     padding: 1rem;
+    overflow: auto;
   }
 
   .side-bar {
