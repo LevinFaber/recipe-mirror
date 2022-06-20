@@ -52,8 +52,7 @@ export default function RecipeDetailsPage() {
           <ul>
             {data.recipe.tags.map(({ name, id: tagId, _count, slug }) => (
               <li key={tagId}>
-                <Link to={slug}>{name} ({_count.recipes})</Link>
-                
+                <Link to={`/category/${slug}`}>{name} ({_count.recipes})</Link>
               </li>
             ))}
           </ul>
