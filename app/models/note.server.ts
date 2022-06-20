@@ -1,4 +1,6 @@
-import type { User, Note } from "@prisma/client";
+export {};
+
+/* import type { User, Note } from "@prisma/client";
 
 import { prisma } from "~/db.server";
 
@@ -50,3 +52,4 @@ export function deleteNote({
     where: { id, userId },
   });
 }
+ */

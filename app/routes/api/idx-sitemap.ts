@@ -1,4 +1,5 @@
-import { json, LoaderFunction } from "@remix-run/server-runtime";
+import { json } from "@remix-run/server-runtime";
+import type { LoaderFunction } from "@remix-run/server-runtime";
 import parse from "node-html-parser";
 import invariant from "tiny-invariant";
 import { addFromUrlToDB } from "~/models/recipe.server";

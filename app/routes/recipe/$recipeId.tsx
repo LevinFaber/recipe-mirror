@@ -1,4 +1,3 @@
-import { Recipe } from "@prisma/client";
 import type { ActionFunction, LoaderFunction } from "@remix-run/node";
 import { json } from "@remix-run/node";
 import { Form, Link, useCatch, useLoaderData } from "@remix-run/react";
